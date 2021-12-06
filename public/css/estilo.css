@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik';
+    box-sizing: border-box;
+}
+#container /* container onde coloquei o concept peugeot*/ 
+{
+    height: 10vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: rgb(139, 15, 15);
+    margin-bottom: auto;
+}
+#container #logo /* logo hybrid car news*/
+{
+    position: absolute;
+    left: 8%;
+    top: 20px;
+    font-size: 40px;
+    z-index: 997;
+    font-weight: bold;
+    color: rgb(11, 26, 241);
+}
+#navbar /* navbar inicial contém logo e o navbar home e news*/
+{
+    height: 78px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #e2e1e1;
+    display: grid;
+    place-items: center;
+}
+#navbar ul /* Navbar home e news*/
+{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+#navbar ul li
+{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 45px;
+}
+#navbar ul li a
+{
+    text-decoration: underline blue;
+}
+#navbar ul li a:hover
+{
+    color: #000000;
+}
+/* login button */
+#image
+{
+    position: relative;
+    top: calc(100% - 300px);
+    right: auto;
+    z-index: 999;
+}
+#image img
+{
+    height: 600px;
+    filter: drop-shadow(-140px -140px 5px rgba(0,0,0,0.5));
+}
+#image img:hover
+{
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
+
+}
+/* content */
+#content
+{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    z-index: 996;
+}
+#content h2
+{
+    font-size: 100px;
+    font-weight: bold;
+    text-decoration: underline blue;
+}
+#content h4 /* conteudo das noticias apresentadas*/
+{
+    font-size: 30px;
+    color: #000;
+}
+#content p
+{
+    font-size: 20px;
+    color: #000;
+}
+#content:hover h4
+{
+    color: #165397;
+    transition: 0.5s;
+}
